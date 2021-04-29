@@ -1,0 +1,123 @@
+@import "reset.css";
+
+:root {
+  --clr-prim-1: hsl(31, 77%, 52%);
+  --clr-prim-2: hsl(184, 100%, 22%);
+  --clr-prim-3: hsl(179, 100%, 13%);
+
+  --clr-neu-1: hsla(0, 0%, 100%, 0.75);
+  --clr-neu-2: hsl(0, 0%, 95%);
+  --margin-b: 2.5rem;
+}
+
+* {
+  font-family: "Big Shoulders Display", cursive;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 93.75%;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background: var(--clr-neu-2);
+  justify-content: center;
+  align-items: center;
+  margin: 5%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin: 5%;
+  overflow: hidden;
+  border-radius: 5px;
+  color: var(--clr-neu-2);
+}
+
+/* BASIC STYLES FOR ALL THE CARDS */
+
+.card {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.car {
+  width: 5rem;
+  height: auto;
+  flex: 1;
+  margin-bottom: var(--margin-b);
+}
+
+h2 {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 3rem;
+  margin-bottom: var(--margin-b);
+  text-transform: uppercase;
+}
+
+p {
+  font-family: "Lexend Deca", sans-serif;
+  color: var(--clr-neu-1);
+  font-size: 1rem;
+  margin-bottom: var(--margin-b);
+  max-width: 90%;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.btn {
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 20px;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.btn a {
+  text-decoration: none;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+/* SPECIFIC STYLES FOR CARDS */
+
+.card-1 {
+  background-color: var(--clr-prim-1);
+}
+
+.card-2 {
+  background-color: var(--clr-prim-2);
+}
+
+.card-3 {
+  background-color: var(--clr-prim-3);
+}
+
+.btn-1 a {
+  color: var(--clr-prim-1);
+}
+
+.btn-2 a {
+  color: var(--clr-prim-2);
+}
+
+.btn-3 a {
+  color: var(--clr-prim-3);
+}
+
+@media only screen and (min-width: 800px) {
+  .container {
+    flex-direction: row;
+  }
+}
